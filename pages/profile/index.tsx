@@ -1,11 +1,10 @@
-import React from "react";
+import { FC } from "react";
+import ProfileTemplate from "@/components/templates/ProfileTemplate";
 
-const ProfilePage: React.FC = () => {
+const Profile: FC = () => {
   return (
-    <>
-      <h1>Welcome to the Profile Page!</h1>
-    </>
+    <ProfileTemplate />
   );
 };
 
-export default ProfilePage;
+export default Profile;

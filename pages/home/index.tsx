@@ -1,11 +1,10 @@
-import React from "react";
+import { FC } from "react";
+import HomeTemplate from "@/components/templates/HomeTemplate";
 
-const HomePage: React.FC = () => {
+const Home: FC = () => {
   return (
-    <>
-      <h1>Welcome to the Home Page!</h1>
-    </>
+    <HomeTemplate />
   );
 };
 
-export default HomePage;
+export default Home;

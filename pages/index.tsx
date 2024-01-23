@@ -1,13 +1,12 @@
-import React, {useEffect} from 'react';
-import {useRouter} from 'next/router';
+import { FC, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 
-const RootPage: React.FC = () => {
+const Main: FC = () => {
   const router = useRouter();
 
   useEffect(() => {
-    // Redirect to /home
-    router.replace("/home").then(r => null).catch(e => null)
+    router.replace("/home");
   }, []);
 
   return (
@@ -15,4 +14,4 @@ const RootPage: React.FC = () => {
   );
 };
 
-export default RootPage;
+export default Main;
